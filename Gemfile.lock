@@ -569,13 +569,13 @@ DEPENDENCIES
   poltergeist
   resque-scheduler
   riiif (= 0.0.9)
+  rspec-html-matchers
   rspec-its
   rspec-rails (~> 3.0)
   ruby-oci8
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring
-  rspec-html-matchers
   sqlite3
   sufia-models!
   therubyracer

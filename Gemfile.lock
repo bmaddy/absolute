@@ -575,9 +575,7 @@ DEPENDENCIES
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring
-  poltergeist
   rspec-html-matchers
-  ruby-oci8
   sqlite3
   sufia-models!
   therubyracer

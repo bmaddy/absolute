@@ -430,11 +430,7 @@ GEM
       rspec-expectations (>= 2.99.0.beta1)
     rspec-mocks (3.0.3)
       rspec-support (~> 3.0.0)
-<<<<<<< HEAD
     rspec-rails (3.0.2)
-=======
-    rspec-rails (3.0.1)
->>>>>>> cap deploy with oracle to hydra-dev.case.edu
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       railties (>= 3.0)
@@ -442,11 +438,7 @@ GEM
       rspec-expectations (~> 3.0.0)
       rspec-mocks (~> 3.0.0)
       rspec-support (~> 3.0.0)
-<<<<<<< HEAD
     rspec-support (3.0.3)
-=======
-    rspec-support (3.0.0)
->>>>>>> cap deploy with oracle to hydra-dev.case.edu
     ruby-oci8 (2.1.7)
     rubycas-client (2.3.9)
       activesupport
@@ -549,6 +541,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active-fedora!
   activerecord-oracle_enhanced-adapter
   angularjs-rails
   bootstrap-sass
@@ -572,36 +565,17 @@ DEPENDENCIES
   launchy
   mysql2
   openseadragon (= 0.0.8)
-<<<<<<< HEAD
-<<<<<<< HEAD
   rails (= 4.1.2)
+  poltergeist
   resque-scheduler
   riiif (= 0.0.9)
-  rspec-its
-  rspec-rails (~> 3.0)
-  sass-rails (~> 4.0.3)
-  sdoc (~> 0.4.0)
-  spring
-=======
-  poltergeist
-  rails (= 4.0.5)
-  riiif (= 0.0.8)
   rspec-html-matchers
-  rspec-rails
-  ruby-oci8
-  sass-rails (~> 4.0.2)
-  sdoc
->>>>>>> adds oracle gems to Gemfile
-=======
-  rails (= 4.1.2.rc1)
-  riiif (= 0.0.9)
   rspec-its
   rspec-rails (~> 3.0)
   ruby-oci8
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring
->>>>>>> cap deploy with oracle to hydra-dev.case.edu
   sqlite3
   sufia-models!
   therubyracer

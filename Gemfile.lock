@@ -565,10 +565,11 @@ DEPENDENCIES
   launchy
   mysql2
   openseadragon (= 0.0.8)
-  rails (= 4.1.2)
   poltergeist
+  rails (= 4.1.2)
   resque-scheduler
   riiif (= 0.0.9)
+  rspec-html-matchers
   rspec-its
   rspec-rails (~> 3.0)
   ruby-oci8

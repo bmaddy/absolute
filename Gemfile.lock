@@ -575,6 +575,7 @@ DEPENDENCIES
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring
+  rspec-html-matchers
   sqlite3
   sufia-models!
   therubyracer

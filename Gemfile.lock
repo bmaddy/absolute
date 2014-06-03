@@ -569,6 +569,7 @@ DEPENDENCIES
   riiif (= 0.0.9)
   rspec-its
   rspec-rails (~> 3.0)
+  ruby-oci8
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring

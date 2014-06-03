@@ -1,6 +1,6 @@
 set :application, 'absolute'
 set :repo_url, 'git@github.com:curationexperts/absolute.git'
-set :branch, 'master'
+set :branch, 'oracle'
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
@@ -24,6 +24,17 @@ $LOAD_PATH.unshift File.join(File.dirname(__FILE__), 'deploy')
 
 require "resque"
 namespace :deploy do
+
+  desc 'Set variables for oracle'
+  before :migrate, :oracle_env do
+    on roles(:db), in: :sequence, wait: 5 do
+      execute "source /etc/environment"
+      # on oracle deployments, add three variables to /etc/environment:
+      # TNS_ADMIN=/usr/lib/oracle/12.1/client64/network/admin/tnsnames.ora 
+      # NLS_LANG=AMERICAN_AMERICA.AL32UTF8
+      # ORACLE_HOME=/usr/lib/oracle/12.1/client64
+    end
+  end
 
   desc 'Restart application'
   after :publishing, :restart

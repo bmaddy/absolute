@@ -5,6 +5,11 @@ gem 'rails', '4.1.5'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 gem 'mysql2'  # used on sandbox
+
+# two gems required for oracle database connection
+gem 'activerecord-oracle_enhanced-adapter'
+gem 'ruby-oci8'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -32,7 +37,6 @@ gem 'capistrano-rails', '~> 1.1',     group: :development
 gem 'capistrano-bundler', '~> 1.1.2', group: :development
 
 gem 'coveralls', require: false, group: :test
-#gem 'worthwhile', '0.1.1'
 gem 'worthwhile', github: 'curationexperts/worthwhile'
 
 gem 'hydra', '7.1.0'
@@ -53,6 +57,7 @@ gem 'devise_cas_authenticatable', '~> 1.3.6'
 gem 'resque-scheduler'
 
 group :development, :test do
+  gem "debugger"
   gem "jettywrapper"
   gem "rspec-rails", '~> 3.1'
   gem "rspec-its"
